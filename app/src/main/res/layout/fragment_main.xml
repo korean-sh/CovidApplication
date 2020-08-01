@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#035AA6"
+                    android:gravity="center"
+                    android:paddingTop="10sp"
+                    android:text="국내 및 강원도내 현황"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#035AA6"
+                    android:gravity="center"
+                    android:paddingBottom="10sp"
+                    android:text="강원도 콜센터 033-120"
+                    android:textColor="#FCBF1E"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="20sp"
+                    android:text="국내현황"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/korea1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="20dp"
+                        android:text="0"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/korea2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="20dp"
+                        android:text="0"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/korea3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="20dp"
+                        android:text="0"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/korea4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="20dp"
+                        android:text="0"
+                        android:textSize="30sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginBottom="10sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/staut1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#40BAD5"
+                        android:gravity="center"
+                        android:paddingTop="5sp"
+                        android:paddingBottom="5sp"
+                        android:text="확진자"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/staut2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#035AA6"
+                        android:gravity="center"
+                        android:paddingTop="5sp"
+                        android:paddingBottom="5sp"
+                        android:text="완치"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/staut3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#30475E"
+                        android:gravity="center"
+                        android:paddingTop="5sp"
+                        android:paddingBottom="5sp"
+                        android:text="치료중"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/staut4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#222831"
+                        android:gravity="center"
+                        android:paddingTop="5sp"
+                        android:paddingBottom="5sp"
+                        android:text="사망"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30sp"
+                    android:gravity="center"
+                    android:text="기준일1"
+                    android:textColor="#1F4068"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginBottom="20sp"
+                    android:text="강원도 현황"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/kangwon1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="20dp"
+                        android:text="0"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/kangwon2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="20dp"
+                        android:text="0"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/kangwon3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="20dp"
+                        android:text="0"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:id="@+id/kangwon4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="20dp"
+                        android:text="0"
+                        android:textSize="30sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginBottom="10sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/staut5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#C70039"
+                        android:gravity="center"
+                        android:paddingTop="5sp"
+                        android:paddingBottom="5sp"
+                        android:text="확진자"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/staut6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#F0A500"
+                        android:gravity="center"
+                        android:paddingTop="5sp"
+                        android:paddingBottom="5sp"
+                        android:text="자가격리"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/staut7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#16818A"
+                        android:gravity="center"
+                        android:paddingTop="5sp"
+                        android:paddingBottom="5sp"
+                        android:text="검사중"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/staut8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#0F4C81"
+                        android:gravity="center"
+                        android:paddingTop="5sp"
+                        android:paddingBottom="5sp"
+                        android:text="퇴원자"
+                        android:textColor="@android:color/white"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/date1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20sp"
+                    android:gravity="center"
+                    android:text="기준일2"
+                    android:textColor="#1F4068"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginBottom="20sp"
+                    android:text="시군별 상세보기"
+                    android:textColor="@android:color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginBottom="5sp">
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="춘천"
+                        android:textColor="#3F3F44"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/local"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textColor="#3F3F44"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="원주"
+                        android:textColor="#3F3F44"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/local1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textColor="#3F3F44"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginBottom="5sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="강릉"
+                        android:textColor="#3F3F44"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/local2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textColor="#3F3F44"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="태백"
+                        android:textColor="#3F3F44"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/local3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textColor="#3F3F44"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginBottom="5sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="속초"
+                        android:textColor="#3F3F44"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/local4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textColor="#3F3F44"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="삼척"
+                        android:textColor="#3F3F44"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/local5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textColor="#3F3F44"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginBottom="5sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView29"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="횡성"
+                        android:textColor="#3F3F44"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/local6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textColor="#3F3F44"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="영월"
+                        android:textColor="#3F3F44"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/local7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textColor="#3F3F44"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginBottom="5sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView34"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="철원"
+                        android:textColor="#3F3F44"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/local8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textAllCaps="false"
+                        android:textColor="#3F3F44"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/textView36"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="인제"
+                        android:textColor="#3F3F44"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/local9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textColor="#3F3F44"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView38"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="양양"
+                        android:textColor="#3F3F44"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/local10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textColor="#3F3F44"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/textView40"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="서울"
+                        android:textColor="#3F3F44"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/local11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textColor="#3F3F44"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="100sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
