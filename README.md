@@ -1,6 +1,8 @@
 # CovidApplication
 ### 공공데이터 공적마스크 API 제공 중단으로 인하여 코드 수정이 필요합니다.
 ### 현재는 API와 비동기 통신하는 CODE로 작성되어 있습니다. 곧 수정할 예정입니다.
+* JSON 위치 > [ CovidApplication/app/src/main/java/com/project/mask/mask.json ]
+* 실제 공적마스크 데이터를 백업한 파일.
 ---
 
 
