@@ -92,10 +92,6 @@ public class PharmacyAdapter extends RecyclerView.Adapter<PharmacyAdapter.MyView
             layout = itemView;
         }
 
-        /*
-          2020-05-13 (2일 소요)
-          API 값으로 예상하지 못한 값이 있으므로 NULL값 처리를 해야함 강원도 춘천시 효자동
-         */
 
         public void setItem(final Pharmacy item) {
             textView.setText(item.getName());

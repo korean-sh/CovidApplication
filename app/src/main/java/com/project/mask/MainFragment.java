@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -119,19 +120,18 @@ public class MainFragment extends Fragment {
                     HTMl Class 가져오기 id는 #id
                     강원도내 확진자 가져오기
                  */
-                links = doc.select("div.condition li");
+                links = doc.select("div .condition li");
                 int i = 1;
                 for(Element e : links){
-                    result.put("status"+i, e.text().substring(e.text().indexOf(" ")+1, e.text().length()-1));
+                    result.put("status"+i, e.text().substring(e.text().indexOf(" ")+1, e.text().length()));
                     i++;
-                }
+            }
 
-                //order by 춘천, 원주, 강릉, 태백, 속초, 삼척, 횡성, 영월, 철원, 인제, 양양, 서울
-                links = doc.select("div.condition .memo");
-                String localTotal = links.toString().substring(links.toString().indexOf("춘"), links.toString().lastIndexOf("<br>")).replace(" ","");
-                String[] local = localTotal.split(",");
-                for(int j=0;j<local.length;j++){
-                    result.put("local"+j, local[j].substring(local[j].indexOf("(")+1,local[j].indexOf(")")));
+                links = doc.select("div .skinTb-wrapper .txt-c");
+                i = 1;
+                for(Element e : links){
+                    result.put("local"+i, e.text());
+                    i++;
                 }
 
             } catch (IOException e) {
@@ -148,18 +148,18 @@ public class MainFragment extends Fragment {
             kangwon4.setText(map.get("status4"));
             date1.setText(map.get("date2"));
 
-            local.setText(map.get("local0"));
-            local1.setText(map.get("local1"));
-            local2.setText(map.get("local2"));
-            local3.setText(map.get("local3"));
-            local4.setText(map.get("local4"));
-            local5.setText(map.get("local5"));
-            local6.setText(map.get("local6"));
-            local7.setText(map.get("local7"));
-            local8.setText(map.get("local8"));
-            local9.setText(map.get("local9"));
-            local10.setText(map.get("local10"));
-            local11.setText(map.get("local11"));
+            local.setText(map.get("local2")); //춘천
+            local1.setText(map.get("local3")); //원주
+            local2.setText(map.get("local4"));  //강릉
+            local3.setText(map.get("local5"));  //동해
+            local4.setText(map.get("local6")); //태백
+            local5.setText(map.get("local7")); //속초
+            local6.setText(map.get("local8")); //삼척
+            local7.setText(map.get("local9")); //홍천
+            local8.setText(map.get("local10")); //횡성
+            local9.setText(map.get("local11")); //영월
+            local10.setText(map.get("local12")); //평창
+            local11.setText(map.get("local13")); //정선
         }
     }
 
@@ -170,21 +170,23 @@ public class MainFragment extends Fragment {
             Map<String, String> result = new HashMap<String, String>();
 
             try {
-                //전국 코로나 HTML 가져오기
+                //질병관리청
                 Document doc = (Document) Jsoup.connect("http://ncov.mohw.go.kr/").get();
-                Elements links = doc.select("div .liveNumOuter .livedate");
 
-                //기준일 가져오기
-                result.put("date1",links.toString().substring(String.valueOf(links).indexOf("(")+1,String.valueOf(links).indexOf(")")));
+                //2022-01-30 수정
+                Elements links = doc.select("table .ds_table");
+                Elements title = doc.select("div .occurrenceStatus .title1 .livedate");
+
+                String standard = title.toString().substring(String.valueOf(title).indexOf("(")+1,String.valueOf(title).indexOf(","));
+                result.put("date1", standard);
 
                 /*
                     HTMl Class 가져오기 id는 #id
                     질병관리본부 통계 가져오기
                  */
-                links = doc.select("div .liveNumOuter .num");
+                links = doc.select("tbody td span");
                 int i = 1;
                 for(Element e : links){
-                    //Log.d("dddd",e.text());
                     result.put("korea"+i, e.text());
                     i++;
                 }
@@ -196,14 +198,12 @@ public class MainFragment extends Fragment {
 
         @Override
         protected void onPostExecute(Map<String, String> map) {
-            korea1.setText(map.get("korea1").replace("(누적)",""));
+            korea1.setText(map.get("korea1"));
             korea2.setText(map.get("korea2"));
             korea3.setText(map.get("korea3"));
             korea4.setText(map.get("korea4"));
             date.setText(map.get("date1"));
         }
     }
-
-
 }
 

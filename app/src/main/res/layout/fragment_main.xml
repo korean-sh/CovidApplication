@@ -27,7 +27,7 @@
                     android:paddingTop="10sp"
                     android:text="국내 및 강원도내 현황"
                     android:textColor="@android:color/white"
-                    android:textSize="25sp"
+                    android:textSize="23sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -38,7 +38,7 @@
                     android:paddingBottom="10sp"
                     android:text="강원도 콜센터 033-120"
                     android:textColor="#FCBF1E"
-                    android:textSize="25sp"
+                    android:textSize="23sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -48,7 +48,7 @@
                     android:layout_marginLeft="10sp"
                     android:layout_marginTop="10sp"
                     android:layout_marginBottom="20sp"
-                    android:text="국내현황"
+                    android:text="질병관리청-코로나 관련 통계"
                     android:textColor="@android:color/black"
                     android:textSize="14sp" />
 
@@ -119,9 +119,9 @@
                         android:gravity="center"
                         android:paddingTop="5sp"
                         android:paddingBottom="5sp"
-                        android:text="확진자"
+                        android:text="사망"
                         android:textColor="@android:color/white"
-                        android:textSize="20sp" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/staut2"
@@ -132,9 +132,9 @@
                         android:gravity="center"
                         android:paddingTop="5sp"
                         android:paddingBottom="5sp"
-                        android:text="완치"
+                        android:text="재원 위중증"
                         android:textColor="@android:color/white"
-                        android:textSize="20sp" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/staut3"
@@ -145,9 +145,9 @@
                         android:gravity="center"
                         android:paddingTop="5sp"
                         android:paddingBottom="5sp"
-                        android:text="치료중"
+                        android:text="신규 입원"
                         android:textColor="@android:color/white"
-                        android:textSize="20sp" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/staut4"
@@ -158,9 +158,9 @@
                         android:gravity="center"
                         android:paddingTop="5sp"
                         android:paddingBottom="5sp"
-                        android:text="사망"
+                        android:text="확진"
                         android:textColor="@android:color/white"
-                        android:textSize="20sp" />
+                        android:textSize="18sp" />
                 </LinearLayout>
 
 
@@ -180,7 +180,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10sp"
                     android:layout_marginBottom="20sp"
-                    android:text="강원도 현황"
+                    android:text="강원도-코로나 관련 통계"
                     android:textColor="@android:color/black"
                     android:textSize="14sp" />
 
@@ -252,7 +252,7 @@
                         android:paddingBottom="5sp"
                         android:text="확진자"
                         android:textColor="@android:color/white"
-                        android:textSize="20sp" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/staut6"
@@ -263,9 +263,9 @@
                         android:gravity="center"
                         android:paddingTop="5sp"
                         android:paddingBottom="5sp"
-                        android:text="자가격리"
+                        android:text="입원자"
                         android:textColor="@android:color/white"
-                        android:textSize="20sp" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/staut7"
@@ -276,9 +276,9 @@
                         android:gravity="center"
                         android:paddingTop="5sp"
                         android:paddingBottom="5sp"
-                        android:text="검사중"
+                        android:text="퇴원자"
                         android:textColor="@android:color/white"
-                        android:textSize="20sp" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/staut8"
@@ -289,9 +289,9 @@
                         android:gravity="center"
                         android:paddingTop="5sp"
                         android:paddingBottom="5sp"
-                        android:text="퇴원자"
+                        android:text="자가격리자"
                         android:textColor="@android:color/white"
-                        android:textSize="20sp" />
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -311,7 +311,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10sp"
                     android:layout_marginBottom="20sp"
-                    android:text="시군별 상세보기"
+                    android:text="시군별 상세정보"
                     android:textColor="@android:color/black" />
 
                 <LinearLayout
@@ -327,7 +327,7 @@
                         android:layout_weight="1"
                         android:text="춘천"
                         android:textColor="#3F3F44"
-                        android:textSize="25sp" />
+                        android:textSize="23sp" />
 
                     <TextView
                         android:id="@+id/local"
@@ -336,7 +336,7 @@
                         android:layout_weight="1"
                         android:text="0"
                         android:textColor="#3F3F44"
-                        android:textSize="25sp" />
+                        android:textSize="23sp" />
 
                     <TextView
                         android:id="@+id/textView18"
@@ -345,7 +345,7 @@
                         android:layout_weight="1"
                         android:text="원주"
                         android:textColor="#3F3F44"
-                        android:textSize="25sp" />
+                        android:textSize="23sp" />
 
                     <TextView
                         android:id="@+id/local1"
@@ -354,7 +354,7 @@
                         android:layout_weight="1"
                         android:text="0"
                         android:textColor="#3F3F44"
-                        android:textSize="25sp" />
+                        android:textSize="23sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -371,7 +371,7 @@
                         android:layout_weight="1"
                         android:text="강릉"
                         android:textColor="#3F3F44"
-                        android:textSize="25sp" />
+                        android:textSize="23sp" />
 
                     <TextView
                         android:id="@+id/local2"
@@ -380,16 +380,16 @@
                         android:layout_weight="1"
                         android:text="0"
                         android:textColor="#3F3F44"
-                        android:textSize="25sp" />
+                        android:textSize="23sp" />
 
                     <TextView
                         android:id="@+id/textView22"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="태백"
+                        android:text="동해"
                         android:textColor="#3F3F44"
-                        android:textSize="25sp" />
+                        android:textSize="23sp" />
 
                     <TextView
                         android:id="@+id/local3"
@@ -398,7 +398,7 @@
                         android:layout_weight="1"
                         android:text="0"
                         android:textColor="#3F3F44"
-                        android:textSize="25sp" />
+                        android:textSize="23sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -413,9 +413,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="속초"
+                        android:text="태백"
                         android:textColor="#3F3F44"
-                        android:textSize="25sp" />
+                        android:textSize="23sp" />
 
                     <TextView
                         android:id="@+id/local4"
@@ -424,16 +424,16 @@
                         android:layout_weight="1"
                         android:text="0"
                         android:textColor="#3F3F44"
-                        android:textSize="25sp" />
+                        android:textSize="23sp" />
 
                     <TextView
                         android:id="@+id/textView26"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="삼척"
+                        android:text="속초"
                         android:textColor="#3F3F44"
-                        android:textSize="25sp" />
+                        android:textSize="23sp" />
 
                     <TextView
                         android:id="@+id/local5"
@@ -442,7 +442,7 @@
                         android:layout_weight="1"
                         android:text="0"
                         android:textColor="#3F3F44"
-                        android:textSize="25sp" />
+                        android:textSize="23sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -457,9 +457,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="횡성"
+                        android:text="삼척"
                         android:textColor="#3F3F44"
-                        android:textSize="25sp" />
+                        android:textSize="23sp" />
 
                     <TextView
                         android:id="@+id/local6"
@@ -468,16 +468,16 @@
                         android:layout_weight="1"
                         android:text="0"
                         android:textColor="#3F3F44"
-                        android:textSize="25sp" />
+                        android:textSize="23sp" />
 
                     <TextView
                         android:id="@+id/textView32"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="영월"
+                        android:text="홍천"
                         android:textColor="#3F3F44"
-                        android:textSize="25sp" />
+                        android:textSize="23sp" />
 
                     <TextView
                         android:id="@+id/local7"
@@ -486,7 +486,7 @@
                         android:layout_weight="1"
                         android:text="0"
                         android:textColor="#3F3F44"
-                        android:textSize="25sp" />
+                        android:textSize="23sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -501,9 +501,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="철원"
+                        android:text="횡성"
                         android:textColor="#3F3F44"
-                        android:textSize="25sp" />
+                        android:textSize="23sp" />
 
                     <TextView
                         android:id="@+id/local8"
@@ -513,16 +513,16 @@
                         android:text="0"
                         android:textAllCaps="false"
                         android:textColor="#3F3F44"
-                        android:textSize="25sp" />
+                        android:textSize="23sp" />
 
                     <TextView
                         android:id="@+id/textView36"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="인제"
+                        android:text="영월"
                         android:textColor="#3F3F44"
-                        android:textSize="25sp" />
+                        android:textSize="23sp" />
 
                     <TextView
                         android:id="@+id/local9"
@@ -531,7 +531,7 @@
                         android:layout_weight="1"
                         android:text="0"
                         android:textColor="#3F3F44"
-                        android:textSize="25sp" />
+                        android:textSize="23sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -545,9 +545,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="양양"
+                        android:text="평창"
                         android:textColor="#3F3F44"
-                        android:textSize="25sp" />
+                        android:textSize="23sp" />
 
                     <TextView
                         android:id="@+id/local10"
@@ -556,16 +556,16 @@
                         android:layout_weight="1"
                         android:text="0"
                         android:textColor="#3F3F44"
-                        android:textSize="25sp" />
+                        android:textSize="23sp" />
 
                     <TextView
                         android:id="@+id/textView40"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="서울"
+                        android:text="정선"
                         android:textColor="#3F3F44"
-                        android:textSize="25sp" />
+                        android:textSize="23sp" />
 
                     <TextView
                         android:id="@+id/local11"
@@ -574,7 +574,7 @@
                         android:layout_weight="1"
                         android:text="0"
                         android:textColor="#3F3F44"
-                        android:textSize="25sp" />
+                        android:textSize="23sp" />
                 </LinearLayout>
 
                 <TextView
